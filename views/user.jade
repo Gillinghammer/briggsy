@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  img(src="#{user.picture}")
+  h1 #{user.name}
+  p #{user.country}
+  p #{user.gender}
+  p lat: #{user.latitude} lon: #{user.longitude}
+  p #{user.email}
+  br
+  a(href='/logout') Logout
+  br
+  br
+  a(href='/polls')
+    button Polls
